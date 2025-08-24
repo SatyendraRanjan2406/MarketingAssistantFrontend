@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/types/index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1755587604298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1755588676561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,36 +32,5 @@\n   description: string;\n   impact: string;\n   priority: 'high' | 'medium' | 'low';\n   type: string;\n-}\n-\n-// Authentication types\n-export interface SignupRequest {\n-  username: string;\n-  first_name: string;\n-  last_name: string;\n-  email: string;\n-  password1: string;\n-  password2: string;\n-  company_name: string;\n-  phone_number?: string;\n-  address?: string;\n-}\n-\n-export interface LoginRequest {\n-  username: string;\n-  password: string;\n-}\n-\n-export interface AuthResponse {\n-  success: boolean;\n-  message: string;\n-  redirect_url: string;\n-  errors?: Record<string, string[]>;\n-}\n-\n-export interface AuthState {\n-  isAuthenticated: boolean;\n-  user: User | null;\n-  token?: string;\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1755587604298,
+            "name": "Commit-0",
+            "content": "export type Platform = 'google' | 'meta';\n\nexport interface User {\n  id: string;\n  name: string;\n  email: string;\n}\n\nexport interface Campaign {\n  id: string;\n  name: string;\n  platform: Platform;\n  status: 'active' | 'paused' | 'ended';\n  spend: number;\n  roas: number;\n  ctr: number;\n}\n\nexport interface Insight {\n  id: string;\n  type: 'performance' | 'alert' | 'optimization';\n  title: string;\n  description: string;\n  value: string;\n  change: 'positive' | 'negative' | 'neutral';\n  timestamp: Date;\n}\n\nexport interface ActionItem {\n  id: string;\n  title: string;\n  description: string;\n  impact: string;\n  priority: 'high' | 'medium' | 'low';\n  type: string;\n}\n\n// Authentication types\nexport interface SignupRequest {\n  username: string;\n  first_name: string;\n  last_name: string;\n  email: string;\n  password1: string;\n  password2: string;\n  company_name: string;\n  phone_number?: string;\n  address?: string;\n}\n\nexport interface LoginRequest {\n  username: string;\n  password: string;\n}\n\nexport interface AuthResponse {\n  success: boolean;\n  message: string;\n  redirect_url: string;\n  errors?: Record<string, string[]>;\n}\n\nexport interface AuthState {\n  isAuthenticated: boolean;\n  user: User | null;\n  token?: string;\n}"
+        }
+    ]
+}

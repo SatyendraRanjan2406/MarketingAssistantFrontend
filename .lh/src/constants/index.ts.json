@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/constants/index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1755589673463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1755594235681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n export const API_ENDPOINTS = {\n   SIGNUP: '/accounts/api/signup/',\n   SIGNIN: '/accounts/api/signin/',\n   SIGNOUT: '/accounts/api/signout/',\n+  GOOGLE_OAUTH_INITIATE: '/accounts/api/google-oauth/initiate/',\n } as const;\n"
+                },
+                {
+                    "date": 1755614546776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n   SIGNUP: '/accounts/api/signup/',\n   SIGNIN: '/accounts/api/signin/',\n   SIGNOUT: '/accounts/api/signout/',\n   GOOGLE_OAUTH_INITIATE: '/accounts/api/google-oauth/initiate/',\n+  GOOGLE_OAUTH_CALLBACK: '/accounts/api/google-oauth/callback/',\n } as const;\n"
+                },
+                {
+                    "date": 1755662238486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n   SIGNIN: '/accounts/api/signin/',\n   SIGNOUT: '/accounts/api/signout/',\n   GOOGLE_OAUTH_INITIATE: '/accounts/api/google-oauth/initiate/',\n   GOOGLE_OAUTH_CALLBACK: '/accounts/api/google-oauth/callback/',\n+  CSRF: '/accounts/api/csrf/',\n } as const;\n"
+                },
+                {
+                    "date": 1755663153909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,7 @@\n   SIGNIN: '/accounts/api/signin/',\n   SIGNOUT: '/accounts/api/signout/',\n   GOOGLE_OAUTH_INITIATE: '/accounts/api/google-oauth/initiate/',\n   GOOGLE_OAUTH_CALLBACK: '/accounts/api/google-oauth/callback/',\n-  CSRF: '/accounts/api/csrf/',\n+  GOOGLE_OAUTH_EXCHANGE_TOKENS: '/accounts/api/google-oauth/exchange-tokens/',\n+  GOOGLE_OAUTH_STATUS: '/accounts/api/google-oauth/status/',\n } as const;\n"
+                },
+                {
+                    "date": 1755670382298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,6 @@\n   GOOGLE_OAUTH_INITIATE: '/accounts/api/google-oauth/initiate/',\n   GOOGLE_OAUTH_CALLBACK: '/accounts/api/google-oauth/callback/',\n   GOOGLE_OAUTH_EXCHANGE_TOKENS: '/accounts/api/google-oauth/exchange-tokens/',\n   GOOGLE_OAUTH_STATUS: '/accounts/api/google-oauth/status/',\n+  GOOGLE_ADS_ACCOUNT_SUMMARY: '/google-ads-new/api/account-summary/',\n } as const;\n"
+                },
+                {
+                    "date": 1755670728533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,6 @@\n   GOOGLE_OAUTH_CALLBACK: '/accounts/api/google-oauth/callback/',\n   GOOGLE_OAUTH_EXCHANGE_TOKENS: '/accounts/api/google-oauth/exchange-tokens/',\n   GOOGLE_OAUTH_STATUS: '/accounts/api/google-oauth/status/',\n   GOOGLE_ADS_ACCOUNT_SUMMARY: '/google-ads-new/api/account-summary/',\n+  TOKEN_REFRESH: '/accounts/api/token/refresh/',\n } as const;\n"
+                },
+                {
+                    "date": 1755671351039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n   GOOGLE_OAUTH_CALLBACK: '/accounts/api/google-oauth/callback/',\n   GOOGLE_OAUTH_EXCHANGE_TOKENS: '/accounts/api/google-oauth/exchange-tokens/',\n   GOOGLE_OAUTH_STATUS: '/accounts/api/google-oauth/status/',\n   GOOGLE_ADS_ACCOUNT_SUMMARY: '/google-ads-new/api/account-summary/',\n+  GOOGLE_ADS_SYNC_DATA: '/google-ads-new/api/sync-data/',\n   TOKEN_REFRESH: '/accounts/api/token/refresh/',\n } as const;\n"
+                }
+            ],
+            "date": 1755589673463,
+            "name": "Commit-0",
+            "content": "export const API_BASE_URL = 'http://localhost:8000';\nexport const API_ENDPOINTS = {\n  SIGNUP: '/accounts/api/signup/',\n  SIGNIN: '/accounts/api/signin/',\n  SIGNOUT: '/accounts/api/signout/',\n} as const;\n"
+        }
+    ]
+}
