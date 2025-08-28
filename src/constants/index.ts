@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://localhost:8000';
+export const API_BASE_URL = 'http://51.21.101.77/';
 export const API_ENDPOINTS = {
   SIGNUP: '/accounts/api/signup/',
   SIGNIN: '/accounts/api/signin/',

@@ -14,7 +14,8 @@ export default defineConfig({
       'localhost',
       '127.0.0.1',
       '.ngrok-free.app', // Allow all ngrok-free.app subdomains
-      'ce3df4640f22.ngrok-free.app', // Your specific ngrok host
+      'ce3df4640f22.ngrok-free.app',
+      '51.21.101.77', // Your specific ngrok host
     ],
     cors: true, // Enable CORS
   },

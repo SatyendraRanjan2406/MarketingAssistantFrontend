@@ -1,5 +1,5 @@
 class ChatApiService {
-  private baseUrl = 'http://localhost:8000/google-ads-new/api';
+  private baseUrl = 'http://51.21.101.77/google-ads-new/api';
   private token: string;
 
   constructor(token: string) {
