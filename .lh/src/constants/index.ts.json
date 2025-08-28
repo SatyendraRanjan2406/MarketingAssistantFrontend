@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1755589673463,
@@ -36,6 +36,14 @@
                 {
                     "date": 1755671351039,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n   GOOGLE_OAUTH_CALLBACK: '/accounts/api/google-oauth/callback/',\n   GOOGLE_OAUTH_EXCHANGE_TOKENS: '/accounts/api/google-oauth/exchange-tokens/',\n   GOOGLE_OAUTH_STATUS: '/accounts/api/google-oauth/status/',\n   GOOGLE_ADS_ACCOUNT_SUMMARY: '/google-ads-new/api/account-summary/',\n+  GOOGLE_ADS_SYNC_DATA: '/google-ads-new/api/sync-data/',\n   TOKEN_REFRESH: '/accounts/api/token/refresh/',\n } as const;\n"
+                },
+                {
+                    "date": 1756037131237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,8 @@\n   GOOGLE_OAUTH_STATUS: '/accounts/api/google-oauth/status/',\n   GOOGLE_ADS_ACCOUNT_SUMMARY: '/google-ads-new/api/account-summary/',\n   GOOGLE_ADS_SYNC_DATA: '/google-ads-new/api/sync-data/',\n   TOKEN_REFRESH: '/accounts/api/token/refresh/',\n+  // Google Ads Chatbot endpoints\n+  GOOGLE_ADS_CHAT_SESSION_CREATE: '/google-ads-new/api/chat/sessions/create/',\n+  GOOGLE_ADS_CHAT_MESSAGE: '/google-ads-new/api/chat/message/',\n } as const;\n"
+                },
+                {
+                    "date": 1756097033902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,9 @@\n   TOKEN_REFRESH: '/accounts/api/token/refresh/',\n   // Google Ads Chatbot endpoints\n   GOOGLE_ADS_CHAT_SESSION_CREATE: '/google-ads-new/api/chat/sessions/create/',\n   GOOGLE_ADS_CHAT_MESSAGE: '/google-ads-new/api/chat/message/',\n+  // New comprehensive chat endpoints\n+  GOOGLE_ADS_CHAT_SESSIONS: '/google-ads-new/api/chat/sessions/',\n+  GOOGLE_ADS_CHAT_HISTORY: '/google-ads-new/api/chat/sessions/',\n+  GOOGLE_ADS_CHAT_DELETE_SESSION: '/google-ads-new/api/chat/sessions/delete/',\n } as const;\n"
                 }
             ],
             "date": 1755589673463,

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/services/chatApi.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1756092415455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1756092415455,
+            "name": "Commit-0",
+            "content": "class ChatApiService {\n  private baseUrl = 'http://localhost:8000/google-ads-new/api';\n  private token: string;\n\n  constructor(token: string) {\n    this.token = token;\n  }\n\n  private getHeaders() {\n    return {\n      'Content-Type': 'application/json',\n      'Authorization': `Bearer ${this.token}`,\n    };\n  }\n\n  async createSession(title: string) {\n    const response = await fetch(`${this.baseUrl}/chat/sessions/create/`, {\n      method: 'POST',\n      headers: this.getHeaders(),\n      body: JSON.stringify({ title }),\n    });\n    return response.json();\n  }\n\n  async sendMessage(message: string, sessionId: string) {\n    const response = await fetch(`${this.baseUrl}/chat/message/`, {\n      method: 'POST',\n      headers: this.getHeaders(),\n      body: JSON.stringify({ message, session_id: sessionId }),\n    });\n    return response.json();\n  }\n\n  async getSessions() {\n    const response = await fetch(`${this.baseUrl}/chat/sessions/`, {\n      headers: this.getHeaders(),\n    });\n    return response.json();\n  }\n\n  async getChatHistory(sessionId: string) {\n    const response = await fetch(`${this.baseUrl}/chat/sessions/${sessionId}/`, {\n      headers: this.getHeaders(),\n    });\n    return response.json();\n  }\n\n  async deleteSession(sessionId: string) {\n    const response = await fetch(`${this.baseUrl}/chat/sessions/${sessionId}/delete/`, {\n      method: 'DELETE',\n      headers: this.getHeaders(),\n    });\n    return response.json();\n  }\n\n  async getAccountSummary() {\n    const response = await fetch(`${this.baseUrl}/account-summary/`, {\n      headers: this.getHeaders(),\n    });\n    return response.json();\n  }\n}\n\nexport default ChatApiService;\n"
+        }
+    ]
+}

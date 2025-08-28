@@ -1,0 +1,26 @@
+{
+    "sourceFile": "vite.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1756371571643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756371682620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,5 @@\n   plugins: [react()],\n   optimizeDeps: {\n     exclude: ['lucide-react'],\n   },\n-  server: {\n-    host: true, // Allow external access\n-    port: 5173,\n-    allowedHosts: [\n-      'localhost',\n-      '127.0.0.1',\n-      '.ngrok-free.app', // Allow all ngrok-free.app subdomains\n-      'ce3df4640f22.ngrok-free.app', // Your specific ngrok host\n-    ],\n-    cors: true, // Enable CORS\n-  },\n });\n"
+                },
+                {
+                    "date": 1756371764724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,16 @@\n   plugins: [react()],\n   optimizeDeps: {\n     exclude: ['lucide-react'],\n   },\n+  server: {\n+    host: true, // Allow external access\n+    port: 5173,\n+    allowedHosts: [\n+      'localhost',\n+      '127.0.0.1',\n+      '.ngrok-free.app', // Allow all ngrok-free.app subdomains\n+      'ce3df4640f22.ngrok-free.app', // Your specific ngrok host\n+    ],\n+    cors: true, // Enable CORS\n+  },\n });\n"
+                }
+            ],
+            "date": 1756371571643,
+            "name": "Commit-0",
+            "content": "import { defineConfig } from 'vite';\nimport react from '@vitejs/plugin-react';\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [react()],\n  optimizeDeps: {\n    exclude: ['lucide-react'],\n  },\n  server: {\n    host: true, // Allow external access\n    port: 5173,\n    allowedHosts: [\n      'localhost',\n      '127.0.0.1',\n      '.ngrok-free.app', // Allow all ngrok-free.app subdomains\n      'ce3df4640f22.ngrok-free.app', // Your specific ngrok host\n    ],\n    cors: true, // Enable CORS\n  },\n});\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/ChatBlocks/MetricBlock.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1756092415457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1756092415457,
+            "name": "Commit-0",
+            "content": "interface MetricBlockProps {\n  title: string;\n  value: string;\n  change?: string;\n  trend?: 'up' | 'down' | 'neutral';\n}\n\nexport const MetricBlock: React.FC<MetricBlockProps> = ({ title, value, change, trend }) => {\n  const getTrendIcon = () => {\n    switch (trend) {\n      case 'up':\n        return '↗️';\n      case 'down':\n        return '↘️';\n      case 'neutral':\n        return '→';\n      default:\n        return null;\n    }\n  };\n\n  const getTrendColor = () => {\n    switch (trend) {\n      case 'up':\n        return 'text-green-600';\n      case 'down':\n        return 'text-red-600';\n      case 'neutral':\n        return 'text-gray-600';\n      default:\n        return 'text-gray-600';\n    }\n  };\n\n  return (\n    <div className=\"bg-white rounded-lg border p-4\">\n      <div className=\"text-center\">\n        <h3 className=\"text-sm font-medium text-gray-600 mb-1\">{title}</h3>\n        <div className=\"text-2xl font-bold text-gray-900 mb-1\">{value}</div>\n        {change && (\n          <div className={`text-sm ${getTrendColor()}`}>\n            {getTrendIcon()} {change}\n          </div>\n        )}\n      </div>\n    </div>\n  );\n};\n"
+        }
+    ]
+}

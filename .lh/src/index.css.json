@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/index.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1756113047457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756360778833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,4 +53,49 @@\n \n .overflow-x-auto::-webkit-scrollbar-thumb:hover {\n   background: #a0aec0;\n }\n+\n+/* Dig Deeper Block styling */\n+.dig-deeper-block {\n+  position: relative;\n+  overflow: hidden;\n+}\n+\n+.dig-deeper-block::before {\n+  content: '';\n+  position: absolute;\n+  top: 0;\n+  left: 0;\n+  right: 0;\n+  height: 3px;\n+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);\n+}\n+\n+.dig-deeper-block:hover {\n+  transform: translateY(-2px);\n+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);\n+  transition: all 0.3s ease;\n+}\n+\n+.dig-deeper-block button:not(:disabled):hover {\n+  transform: translateY(-1px);\n+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);\n+}\n+\n+/* Depth indicator animation */\n+.dig-deeper-block .w-3.h-3 {\n+  transition: all 0.3s ease;\n+}\n+\n+.dig-deeper-block .w-3.h-3.bg-blue-500 {\n+  animation: pulse 2s infinite;\n+}\n+\n+@keyframes pulse {\n+  0%, 100% {\n+    opacity: 1;\n+  }\n+  50% {\n+    opacity: 0.7;\n+  }\n+}\n"
+                },
+                {
+                    "date": 1756361352112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,4 +98,44 @@\n   50% {\n     opacity: 0.7;\n   }\n }\n+\n+/* Chat Blocks styling */\n+.space-y-3 > div {\n+  margin-bottom: 1rem;\n+}\n+\n+.space-y-3 > div:last-child {\n+  margin-bottom: 0;\n+}\n+\n+/* Ensure proper spacing between different block types */\n+.bg-white.rounded-lg.border {\n+  margin-bottom: 1rem;\n+}\n+\n+.bg-white.rounded-lg.border:last-child {\n+  margin-bottom: 0;\n+}\n+\n+/* Chart block improvements */\n+.bg-white.rounded-lg.border.p-4 {\n+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n+}\n+\n+/* List block improvements */\n+.bg-white.rounded-lg.border.p-4 ul,\n+.bg-white.rounded-lg.border.p-4 ol {\n+  margin: 0;\n+  padding-left: 1.5rem;\n+}\n+\n+/* Action block improvements */\n+.bg-white.rounded-lg.border.p-4 button {\n+  margin: 0.25rem;\n+}\n+\n+/* Table block improvements */\n+.bg-white.rounded-lg.border.overflow-hidden {\n+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n+}\n"
+                },
+                {
+                    "date": 1756370565907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,4 +138,75 @@\n /* Table block improvements */\n .bg-white.rounded-lg.border.overflow-hidden {\n   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n }\n+\n+/* Text block improvements */\n+.text-xl.font-bold.text-gray-800 {\n+  margin-bottom: 0.75rem;\n+  color: #1f2937;\n+}\n+\n+.text-gray-700.leading-relaxed {\n+  margin-bottom: 0.5rem;\n+  line-height: 1.6;\n+}\n+\n+.text-sm.bg-yellow-100.p-2.rounded.border-l-4.border-yellow-400 {\n+  margin: 0.5rem 0;\n+  font-weight: 500;\n+}\n+\n+/* Creative block improvements */\n+.bg-gradient-to-br.from-purple-50.to-blue-50 {\n+  box-shadow: 0 4px 6px rgba(147, 51, 234, 0.1);\n+}\n+\n+.bg-gradient-to-br.from-purple-50.to-blue-50:hover {\n+  box-shadow: 0 8px 15px rgba(147, 51, 234, 0.15);\n+  transform: translateY(-1px);\n+  transition: all 0.3s ease;\n+}\n+\n+/* Workflow block improvements */\n+.bg-gradient-to-br.from-green-50.to-emerald-50 {\n+  box-shadow: 0 4px 6px rgba(34, 197, 94, 0.1);\n+}\n+\n+.bg-gradient-to-br.from-green-50.to-emerald-50:hover {\n+  box-shadow: 0 8px 15px rgba(34, 197, 94, 0.15);\n+  transform: translateY(-1px);\n+  transition: all 0.3s ease;\n+}\n+\n+/* Image handling in creative blocks */\n+.bg-gradient-to-br.from-purple-50.to-blue-50 img {\n+  transition: transform 0.3s ease;\n+}\n+\n+.bg-gradient-to-br.from-purple-50.to-blue-50 img:hover {\n+  transform: scale(1.05);\n+}\n+\n+/* Chat message spacing improvements */\n+.space-y-3 > div {\n+  margin-bottom: 1.5rem;\n+}\n+\n+.space-y-3 > div:last-child {\n+  margin-bottom: 0;\n+}\n+\n+/* Better visual separation between different content types */\n+.bg-white.rounded-lg.p-3.border.border-gray-200 {\n+  margin-bottom: 1rem;\n+}\n+\n+/* Ensure proper spacing for text blocks */\n+.text-xl.font-bold.text-gray-800.mb-3 {\n+  margin-top: 1rem;\n+}\n+\n+/* Highlight blocks should stand out */\n+.text-sm.bg-yellow-100.p-3.rounded-lg.border-l-4.border-yellow-400.my-3.font-medium {\n+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.1);\n+}\n"
+                }
+            ],
+            "date": 1756113047457,
+            "name": "Commit-0",
+            "content": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n/* Custom styles for table images */\n.image-cell img {\n  max-width: 100%;\n  height: auto;\n  border-radius: 8px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  transition: transform 0.2s ease-in-out;\n}\n\n.image-cell img:hover {\n  transform: scale(1.05);\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);\n}\n\n/* Ensure table cells with images have proper spacing */\n.image-cell {\n  padding: 8px;\n}\n\n/* Responsive table styling */\n@media (max-width: 768px) {\n  .image-cell img {\n    max-width: 200px;\n  }\n  \n  .image-cell {\n    padding: 4px;\n  }\n}\n\n/* Table responsive behavior */\n.overflow-x-auto {\n  scrollbar-width: thin;\n  scrollbar-color: #cbd5e0 #f7fafc;\n}\n\n.overflow-x-auto::-webkit-scrollbar {\n  height: 6px;\n}\n\n.overflow-x-auto::-webkit-scrollbar-track {\n  background: #f7fafc;\n}\n\n.overflow-x-auto::-webkit-scrollbar-thumb {\n  background: #cbd5e0;\n  border-radius: 3px;\n}\n\n.overflow-x-auto::-webkit-scrollbar-thumb:hover {\n  background: #a0aec0;\n}\n"
+        }
+    ]
+}
